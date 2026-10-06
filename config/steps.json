@@ -1,0 +1,69 @@
+{
+  "steps": [
+    {
+      "id": 0, "title": "채널·점포와 미션",
+      "questions": [
+        {"key": "store", "title": "어느 채널, 어느 점포인가", "hint": "왜 그 점포인지 근거를 한 줄 적습니다. 찾는 곳: 공식 홈페이지 층별 안내, 지도 리뷰, 뉴스", "type": "long", "required": true},
+        {"key": "mission", "title": "미션 한 문장", "hint": "'___ 점포의 ___ 고객이 ___ 하도록 만든다'", "type": "text", "required": true}
+      ]
+    },
+    {
+      "id": 1, "title": "시장 분석",
+      "questions": [
+        {"key": "trend", "title": "올라탈 트렌드 한 가지", "hint": "숫자나 출처를 꼭 붙입니다. 예) 2026년 상반기 백화점 매출 20.1% 증가 (산업통상부)", "type": "long", "required": true, "check": "evidence"},
+        {"key": "c1", "title": "사례 · 직접 경쟁", "hint": "무엇을 했나 / 숫자와 출처 / 왜 통했나", "type": "case", "required": true, "check": "evidence"},
+        {"key": "c2", "title": "사례 · 유사 업태", "hint": "복합몰, 온라인 장보기 등", "type": "case", "required": true, "check": "evidence"},
+        {"key": "c3", "title": "사례 · 이업종 국내", "hint": "업종이 다른 국내 기업", "type": "case", "required": true, "check": "evidence"},
+        {"key": "c4", "title": "사례 · 이업종 글로벌", "hint": "업종이 다른 해외 기업", "type": "case", "required": true, "check": "evidence"},
+        {"key": "rule", "title": "네 사례의 공통 원리 한 문장", "hint": "우리 점포에 옮길 때 가장 큰 장벽도 함께", "type": "long", "required": true},
+        {"key": "task", "title": "핵심 과제 한 문장", "hint": "'___ 고객은 ___ 때문에 ___ 하지 않는다. 우리는 ___ 로 이것을 바꾼다.'", "type": "text", "required": true}
+      ]
+    },
+    {
+      "id": 2, "title": "목표와 타깃",
+      "questions": [
+        {"key": "goal", "title": "수치 목표", "hint": "신규 유입과 재방문을 각각 숫자와 기한으로. 공개 수치가 없으면 (가정)이라고 씁니다", "type": "long", "required": true, "check": "number"},
+        {"key": "persona", "title": "주 타깃 한 사람", "hint": "이름, 나이, 직업, 하루 동선, 우리 채널에 대한 생각", "type": "long", "required": true},
+        {"key": "low", "title": "감정이 가장 낮은 두 곳", "hint": "인지 · 방문 · 체험 · 구매 · 서비스 · 재방문 · 추천 중에서, 근거와 함께", "type": "low", "required": true}
+      ]
+    },
+    {
+      "id": 3, "title": "컨셉과 도구",
+      "questions": [
+        {"key": "concept", "title": "컨셉 한 문장", "hint": "핵심 과제 문장의 뒷부분을 고객이 느낄 말로", "type": "text", "required": true},
+        {"key": "tools", "title": "도구 선택", "hint": "메인 1개, 보조는 1~2개까지", "type": "tools", "required": true, "check": "tools"},
+        {"key": "not", "title": "하지 않기로 한 것과 이유", "hint": "시간이 없어서가 아니라 컨셉과의 관계로", "type": "long", "required": true}
+      ]
+    },
+    {
+      "id": 4, "title": "실행안",
+      "questions": [
+        {"key": "mainplan", "title": "메인 도구 실행안", "hint": "고객이 실제로 무엇을 하게 되는지 순서대로", "type": "long", "required": true},
+        {"key": "subplan", "title": "보조 도구 실행안", "hint": "메인을 어떻게 돕는지", "type": "long", "required": true, "requiredIf": "hasSub"}
+      ]
+    },
+    {
+      "id": 5, "title": "일정·KPI·예산",
+      "questions": [
+        {"key": "plan", "title": "4주 일정", "hint": "사전 준비부터, 주차별로", "type": "plan", "required": true},
+        {"key": "kpi", "title": "KPI와 측정 방법", "hint": "측정 방법이 없으면 KPI가 아닙니다. 가장 먼저 볼 선행 지표 하나", "type": "kpi", "required": true, "check": "kpi"},
+        {"key": "budget", "title": "예산 배분", "hint": "메인에 가장 큰 비중, 뺀 도구는 0원, 예비비 5~10%. 합계 2억 원", "type": "budget", "required": true, "check": "budget"},
+        {"key": "roi", "title": "기대 매출 기여(억 원)", "hint": "신규 고객 수 × 1인 평균 구매액처럼 식으로 구합니다", "type": "roi", "required": true, "check": "roi"}
+      ]
+    }
+  ],
+  "lowStages": ["인지", "방문", "체험", "구매", "서비스", "재방문", "추천"],
+  "planSlots": [
+    {"id": "pre", "label": "사전 준비"},
+    {"id": "w1", "label": "1주"},
+    {"id": "w2", "label": "2주"},
+    {"id": "w3", "label": "3주"},
+    {"id": "w4", "label": "4주"}
+  ],
+  "mission": {
+    "line": "롯데 채널·점포 1곳 · 2027 상반기 4주 · 예산 2억 · 신규 유입+재방문",
+    "budgetMan": 20000,
+    "reserveMinMan": 1000,
+    "reserveMaxMan": 2000
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "lift-benchmark-workbook",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LOTTE LIFT 3-8 마케팅 벤치마킹 워크북",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -k \"node --watch server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "vitest run",
+    "check-links": "node scripts/check-links.js",
+    "load-test": "node scripts/load-test.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "express": "^5.2.1",
+    "jszip": "^3.10.2",
+    "pdfkit": "^0.20.2",
+    "pg": "^8.23.1",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "vite": "^8.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "playwright-core": "^1.63.0",
+    "vitest": "^5.0.3"
+  }
+}

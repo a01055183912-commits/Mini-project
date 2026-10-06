@@ -1,0 +1,68 @@
+{
+  "groups": [
+    {
+      "id": "official", "title": "롯데 공식",
+      "links": [
+        {"title": "롯데쇼핑(백화점·마트·아울렛) 공식", "url": "https://www.lotteshopping.com", "tip": "점포 안내·층별 매장"},
+        {"title": "롯데백화점 점포 안내", "url": "https://www.lotteshopping.com/store/main", "tip": "부산본점·센텀시티 층별 브랜드"},
+        {"title": "롯데온", "url": "https://www.lotteon.com", "tip": "온·오프라인 연계(선택 E) 참고"},
+        {"title": "롯데마트", "url": "https://www.lottemart.com", "tip": "마트 채널 선택 시"},
+        {"title": "롯데멤버스 L.POINT", "url": "https://www.lpoint.com", "tip": "혜택·멤버십·CRM(선택 C) 참고"},
+        {"title": "롯데 뉴스룸(그룹 보도자료)", "url": "https://www.lotte.co.kr", "tip": "최근 캠페인·협업 사례"}
+      ]
+    },
+    {
+      "id": "stats", "title": "통계·보고서(숫자 찾기)",
+      "links": [
+        {"title": "산업통상부 보도자료 — '유통업체 매출 동향' 검색", "url": "https://www.motie.go.kr", "tip": "매월 발표. 백화점·대형마트·온라인 증감률"},
+        {"title": "통계청 KOSIS", "url": "https://kosis.kr", "tip": "소매판매·온라인쇼핑 동향"},
+        {"title": "대한상공회의소 유통물류", "url": "https://www.korcham.net", "tip": "소매유통 전망 보고서"},
+        {"title": "한국소비자원 소비자시장평가", "url": "https://www.kca.go.kr", "tip": "채널별 만족도"}
+      ]
+    },
+    {
+      "id": "news", "title": "뉴스 검색(검색어 미리 채움)",
+      "links": [
+        {"title": "네이버 뉴스: {q}", "url": "https://search.naver.com/search.naver?where=news&sort=1&query={q}", "template": true},
+        {"title": "구글 뉴스: {q}", "url": "https://www.google.com/search?tbm=nws&q={q}", "template": true},
+        {"title": "다음 뉴스: {q}", "url": "https://search.daum.net/search?w=news&q={q}", "template": true}
+      ]
+    },
+    {
+      "id": "competitor", "title": "직접 경쟁·유사 업태",
+      "links": [
+        {"title": "신세계백화점", "url": "https://www.shinsegae.com"},
+        {"title": "현대백화점", "url": "https://www.ehyundai.com", "tip": "더현대 서울 체험형 매장 사례"},
+        {"title": "스타필드", "url": "https://www.starfield.co.kr", "tip": "복합몰 체류시간 전략"},
+        {"title": "컬리", "url": "https://www.kurly.com", "tip": "온라인 장보기·멤버십"},
+        {"title": "올리브영", "url": "https://www.oliveyoung.co.kr", "tip": "뷰티 체험형·오늘드림"}
+      ]
+    },
+    {
+      "id": "global", "title": "이업종·글로벌 사례",
+      "links": [
+        {"title": "Retail Dive", "url": "https://www.retaildive.com", "tip": "미국 유통 캠페인 기사"},
+        {"title": "Nike Membership", "url": "https://www.nike.com/membership", "tip": "멤버십·앱 연계"},
+        {"title": "Starbucks Rewards", "url": "https://www.starbucks.com/rewards", "tip": "재방문 유도 설계"},
+        {"title": "Lush", "url": "https://www.lush.com", "tip": "체험형 매장·향"},
+        {"title": "Apple Today at Apple", "url": "https://www.apple.com/today/", "tip": "무료 체험 프로그램으로 방문 유도"}
+      ]
+    }
+  ],
+  "byQuestion": {
+    "store":  ["official", "news"],
+    "trend":  ["stats", "news"],
+    "c1":     ["competitor", "news"],
+    "c2":     ["competitor", "news"],
+    "c3":     ["news", "global"],
+    "c4":     ["global", "news"],
+    "goal":   ["stats", "official"],
+    "tools":  ["official"],
+    "budget": ["stats"]
+  },
+  "teamQueries": {
+    "1조": ["백화점 체험형 매장 체류시간", "족욕 카페 직장인", "티 하우스 팝업 백화점", "퇴근 후 힐링 공간 트렌드"],
+    "2조": ["롯데백화점 부산본점 뷰티", "백화점 뷰티 체험 이벤트 2026", "퇴근길 직장인 마케팅", "뷰티 멤버십 신규 고객"],
+    "3조": ["가방 커스텀 체험 매장", "파우치 만들기 클래스", "백화점 DIY 워크숍", "커스터마이징 서비스 백화점"]
+  }
+}
